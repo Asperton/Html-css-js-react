@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <style>
+            input[type="button"]{
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+
+    </head>
+    <body>
+        <script>
+            function pick(val){
+                document.getElementById("a").value +=val;
+            }
+
+            function clr(){
+                document.getElementById("a").value=" ";
+            }
+
+            function solve(){
+               var x=document.getElementById("a").value;
+               var y=eval(x);
+               document.getElementById("a").value=y;
+            }
+
+
+
+
+
+
+        </script>
+        <table>
+            <tr>
+                <th colspan="3"><input type="text">
+                <th><input type="button" value="c" onclick="clr()">
+            </tr>
+            <tr>
+                <th><input type="button" value="1"onchange="pick(1)">
+                <th><input type="button" value="2"onchange="pick(2)">
+                <th><input type="button" value="3"onchange="pick(3)">
+                <th><input type="button" value="/"onchange="pick('/')">  
+            </tr>
+            <tr>
+                <th><input type="button" value="4"onchange="pick(4)">
+                <th><input type="button" value="5"onchange="pick(5)">
+                <th><input type="button" value="6"onchange="pick(6)">
+                <th><input type="button" value="*"onchange="pick('*')"> 
+            </tr>
+            <tr>
+                <th><input type="button" value="7"onchange="pick(7)">
+                <th><input type="button" value="8"onchange="pick(8)">
+                <th><input type="button" value="9"onchange="pick(9)">
+                <th><input type="button" value="-"onchange="pick('-')">  
+            </tr>
+            <tr>
+                <th><input type="button" value="."onchange="pick(.)">
+                <th><input type="button" value="0"onchange="pick(0)">
+                <th><input type="button" value="="onchange="solve()">
+                <th><input type="button" value="+"onchange="pick('+')">  
+            </tr>
+            
+
+
+
+
+
+
+
+        
+        </table>
+    </body>
+</html>
